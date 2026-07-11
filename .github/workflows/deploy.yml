@@ -48,7 +48,7 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build with Next.js
+      - name: Build
         run: npm run build
 
       - name: Upload artifact

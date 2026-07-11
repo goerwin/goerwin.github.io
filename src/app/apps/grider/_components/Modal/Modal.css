@@ -1,8 +1,4 @@
 .Modal {
-  $button-color: #fff;
-  $button-bgcolor: #444;
-  $button-bgcolor-hover: #555;
-
   z-index: 1000;
   position: absolute;
   top: 0;
@@ -27,11 +23,11 @@
       border: 0;
       display: block;
       width: 100%;
-      color: $button-color;
+      color: #fff;
       font-size: 15px;
       padding: 10px;
       margin: 0 auto 5px;
-      background-color: $button-bgcolor;
+      background-color: #444;
       border-radius: 5px;
       cursor: pointer;
 
@@ -40,7 +36,7 @@
       }
 
       &:hover {
-        background-color: $button-bgcolor-hover;
+        background-color: #555;
       }
     }
 
@@ -56,19 +52,18 @@
       &__submit {
         border: 0;
         cursor: pointer;
-        background-color: $button-bgcolor;
-        color: $button-color;
+        background-color: #444;
+        color: #fff;
         border-radius: 5px;
         margin-top: 10px;
         font-size: 20px;
         text-align: center;
-        font-size: 20px;
         padding: 14px 40px;
         display: inline-block;
         text-transform: uppercase;
 
         &:hover {
-          background-color: $button-bgcolor-hover;
+          background-color: #555;
         }
       }
     }

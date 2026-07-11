@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown';
 
 export interface Props {
   children?: ReactNode;
@@ -28,9 +28,9 @@ export default function ExperienceBox(props: Props) {
       ))}
 
       {props.markdownContent ? (
-        <ReactMarkdown className="experience-box-markdown">
-          {props.markdownContent}
-        </ReactMarkdown>
+        <div className="experience-box-markdown">
+          <ReactMarkdown>{props.markdownContent}</ReactMarkdown>
+        </div>
       ) : null}
     </div>
   );

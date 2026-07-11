@@ -13,7 +13,7 @@ export default function Carousel(props: Props) {
   const [activeSlide, setActiveSlide] = useState(0);
   const itemsLength = props.items.length;
   const isOnlyOne = itemsLength === 1;
-  const intervalRef = useRef<number>();
+  const intervalRef = useRef<number>(undefined);
 
   const setNextActiveSlide = () => {
     setActiveSlide((prev) => (prev + 1) % itemsLength);

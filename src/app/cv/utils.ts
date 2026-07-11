@@ -17,7 +17,7 @@ export async function getStyles() {
 export async function getImageInfo(publicPath: string, type: string) {
   const parsedPath = path.join(publicDir, publicPath);
   const file = await readFile(parsedPath);
-  const imageInfo = imageSize(parsedPath);
+  const imageInfo = imageSize(file);
 
   if (!imageInfo.width || !imageInfo.height)
     throw new Error(`No Image info: ${parsedPath}`);

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown';
 import type { EducationExperience, WorkExperience } from '@/content/schemas';
 import {
   getAbout,

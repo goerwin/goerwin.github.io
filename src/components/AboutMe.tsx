@@ -1,4 +1,4 @@
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown';
 import SectionTitle from '@/components/SectionTitle';
 import { getAbout, getInfo } from '@/utils/content';
 
@@ -11,9 +11,9 @@ export default async function AboutMe() {
     <section className="max-w-[40rem] pt-[100px] text-center" id="about">
       <SectionTitle title="About Me" />
 
-      <ReactMarkdown className="[&>p]:mb-5 [&>p]:leading-loose">
-        {aboutMe.content}
-      </ReactMarkdown>
+      <div className="[&>p]:mb-5 [&>p]:leading-loose">
+        <ReactMarkdown>{aboutMe.content}</ReactMarkdown>
+      </div>
 
       <p className="mb-5 font-bold">My languages are:</p>
 

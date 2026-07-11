@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import ReactMarkdown from 'react-markdown';
 import { twMerge } from 'tailwind-merge';
 import type { Info } from '@/content/schemas';
 

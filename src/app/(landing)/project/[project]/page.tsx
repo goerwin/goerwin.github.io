@@ -52,9 +52,9 @@ export default async function ProjectPage({ params }: Props) {
       ) : (
         <div className="my-14 h-16 w-1 rounded-full bg-gray-400" />
       )}
-      <ReactMarkdown className="prose lg:prose-xl mt-16 text-left dark:text-gray-100">
-        {project.content}
-      </ReactMarkdown>
+      <div className="prose lg:prose-xl mt-16 text-left dark:text-gray-100">
+        <ReactMarkdown>{project.content}</ReactMarkdown>
+      </div>
 
       <h2 className="mt-10 mb-4 font-bold text-2xl">Skills</h2>
       <TagList tags={project.skills.map((name) => ({ label: name }))} />

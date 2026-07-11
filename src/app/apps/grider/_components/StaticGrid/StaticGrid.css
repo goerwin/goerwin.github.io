@@ -53,11 +53,6 @@
       opacity: 0;
       background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA7ElEQVRIidXVQUrDQBTG8R/VCwhVwSN4F3HVHqE7D9QjtCvBu3gE0VTq1kWhLtoHY9rEjH0u/OBBhmTe9+WfmcmZOk1xi+fKeYM0xhtWuP4LgyW2+3rMbj4tmkdNspoHmrZBGqoSTbvSUUXjwRplJxhicGmHpVZPuPnpoQka3Rj6EG2xxuzYzUhdfsDfGER9e5sydWatMRvhE5uOVKdog48YXGAuD9HSDvuB7vBygkFjwBHSt0z7DDpT1+h/7OS2yv0RivEiI8QYrw7X+QpXGQZwf8Qg7YcTKlGloGkrUFWhOa8weMfD/roZOukLYedzcps5pDoAAAAASUVORK5CYII=");
       cursor: move;
-
-      //
-      todo:it may not work /* #{$parentItem}:hover & {*/ &__item:hover & {
-        opacity: 1;
-      }
     }
 
     &__resizer {

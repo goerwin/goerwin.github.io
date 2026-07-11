@@ -287,7 +287,7 @@ export default function GriderApp() {
       </StaticGrid>
       {modal}
       <ToastContainer
-        position={toast.POSITION.TOP_CENTER}
+        position="top-center"
         hideProgressBar
         pauseOnHover={false}
         autoClose={2000}
