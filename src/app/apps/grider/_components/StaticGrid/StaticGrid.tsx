@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { getGridDimensions, getGridItemPosDim } from '../../_helpers/grid';
 import './StaticGrid.css';
@@ -79,7 +78,7 @@ export default function StaticGrid(props: Props) {
   const mainRef = useRef({
     matrix: new Array(newRows).fill(new Array(newCols).fill(0)),
   } as Main);
-  const [update, setUpdate] = useState(false);
+  const [_update, setUpdate] = useState(false);
   const [children, setChildren] = useState([] as JSX.Element[]);
   const matrix = mainRef.current.matrix;
   const widthGap = mainRef.current.widthGap;
@@ -125,7 +124,7 @@ export default function StaticGrid(props: Props) {
 
   useEffect(() => {
     setGridDimensions();
-  }, [props.rows, props.cols, props.marginH, props.marginV]);
+  }, [setGridDimensions]);
 
   // ItemDragger handlers
   useEffect(() => {
@@ -210,7 +209,7 @@ export default function StaticGrid(props: Props) {
       containerEl?.removeEventListener('mousemove', handleItemDraggerMouseMove);
       containerEl?.removeEventListener('mouseup', handleItemDraggerMouseUp);
     };
-  }, []);
+  }, [newRows, props.onItemDrag, newCols]);
 
   // ItemResizer handlers
   useEffect(() => {
@@ -294,7 +293,7 @@ export default function StaticGrid(props: Props) {
       containerEl?.removeEventListener('mousemove', handleItemResizerMouseMove);
       containerEl?.removeEventListener('mouseup', handleItemResizerMouseUp);
     };
-  }, []);
+  }, [props.onItemResize]);
 
   // GridItem handlers
   useEffect(() => {
@@ -355,8 +354,8 @@ export default function StaticGrid(props: Props) {
           startY + i < newRows && startY + i >= 0
             ? (absRows++, startY + i)
             : startY + i >= 0
-            ? newRows - 1
-            : 0;
+              ? newRows - 1
+              : 0;
 
         rowsSelected > 0 ? i++ : i--;
 
@@ -367,8 +366,8 @@ export default function StaticGrid(props: Props) {
             startX + j < newCols && startX + j >= 0
               ? (absCols++, startX + j)
               : startX + j >= 0
-              ? newCols - 1
-              : 0;
+                ? newCols - 1
+                : 0;
 
           const matrixRow = newMatrix[rowSelected];
 
@@ -421,7 +420,7 @@ export default function StaticGrid(props: Props) {
     return () => {
       window.removeEventListener('resize', setGridDimensions);
     };
-  }, []);
+  }, [setGridDimensions]);
 
   // set children
   useEffect(() => {
@@ -476,7 +475,7 @@ export default function StaticGrid(props: Props) {
       }),
     );
     // TODO: DO I NEED TO CHECK FOR THE PROPS? ISN'T THIS AUTOMATIC?
-  }, [props.layout, props.children, update]);
+  }, [props.layout, props.children]);
 
   return (
     <div className="StaticGrid" ref={containerRef}>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Fragment, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export type Props = {
   onSubmit: (e: string) => void;
@@ -21,27 +21,25 @@ export default function ModalInput(props: Props) {
   };
 
   useEffect(() => {
-    const inputEl = inputRef && inputRef.current;
-    inputEl && inputEl.focus && inputEl.focus();
+    const inputEl = inputRef?.current;
+    inputEl?.focus?.();
   });
 
   return (
-    <Fragment>
-      <div className="Modal__content">
-        <form className="Modal__content__form" onSubmit={handleOnSubmit}>
-          <input
-            ref={inputRef}
-            className="Modal__content__form__input"
-            type="text"
-            onChange={handleOnChange}
-            placeholder={props.ph}
-            value={url}
-          />
-          <button className="Modal__content__form__submit" type="submit">
-            Go
-          </button>
-        </form>
-      </div>
-    </Fragment>
+    <div className="Modal__content">
+      <form className="Modal__content__form" onSubmit={handleOnSubmit}>
+        <input
+          ref={inputRef}
+          className="Modal__content__form__input"
+          type="text"
+          onChange={handleOnChange}
+          placeholder={props.ph}
+          value={url}
+        />
+        <button className="Modal__content__form__submit" type="submit">
+          Go
+        </button>
+      </form>
+    </div>
   );
 }

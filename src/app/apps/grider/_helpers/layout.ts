@@ -1,5 +1,5 @@
 import { Validator } from 'jsonschema';
-import { Layout } from '../types';
+import type { Layout } from '../types';
 
 const CARD_URL_SEP = '_l_';
 
@@ -46,7 +46,7 @@ export function getLayoutFromUrlQueryParams(search: string) {
       i: `${idx}`,
       url: parsedCardUrls?.[idx] as string,
     }));
-  } catch (e) {
+  } catch (_e) {
     return null;
   }
 }
@@ -66,9 +66,9 @@ export function encodeLayout(layout: Layout) {
       .replace(/\]/g, 'b')
       .replace(/\{/g, 'c')
       .replace(/\}/g, 'd')
-      .replace(/\:/g, 'e')
-      .replace(/\,/g, 'f')
-      .replace(/\"/g, 'g'),
+      .replace(/:/g, 'e')
+      .replace(/,/g, 'f')
+      .replace(/"/g, 'g'),
   );
 }
 
@@ -84,7 +84,7 @@ export function decodeLayout(layout: string) {
         .replace(/f/g, ',')
         .replace(/g/g, '"'),
     );
-  } catch (err) {
+  } catch (_err) {
     return null;
   }
 }

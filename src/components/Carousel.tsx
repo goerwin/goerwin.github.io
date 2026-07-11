@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useEffect, useRef, useState } from 'react';
+import { type ReactNode, useEffect, useRef, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 
@@ -33,14 +33,14 @@ export default function Carousel(props: Props) {
       props.duration ?? 5000,
     );
     return removeInterval;
-  }, [props.duration]);
+  }, [props.duration, setNextActiveSlide, removeInterval]);
 
   return (
     <div className="relative mx-auto overflow-hidden shadow-2xl">
       {isOnlyOne ? null : (
         <>
           <button
-            className="absolute left-2 top-1/2 z-20 mt-[-20px] text-[40px] leading-none text-gray-400 hover:scale-110"
+            className="absolute top-1/2 left-2 z-20 mt-[-20px] text-[40px] text-gray-400 leading-none hover:scale-110"
             aria-label="previous"
             onClick={() => {
               removeInterval();
@@ -51,7 +51,7 @@ export default function Carousel(props: Props) {
           </button>
 
           <button
-            className="absolute right-2 top-1/2 z-20 mt-[-20px] text-[40px] leading-none text-gray-400 hover:scale-110"
+            className="absolute top-1/2 right-2 z-20 mt-[-20px] text-[40px] text-gray-400 leading-none hover:scale-110"
             aria-label="next"
             onClick={() => {
               removeInterval();
@@ -89,7 +89,7 @@ export default function Carousel(props: Props) {
           <div
             key={idx}
             className={`absolute inset-0 flex justify-center transition-opacity duration-500 ${
-              idx !== activeSlide ? 'opacity-0' : 'opacity-1 z-10'
+              idx !== activeSlide ? 'opacity-0' : 'z-10 opacity-1'
             }`}
           >
             {it}

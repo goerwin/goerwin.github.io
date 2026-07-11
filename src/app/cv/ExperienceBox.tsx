@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export interface Props {
@@ -18,12 +18,14 @@ export default function ExperienceBox(props: Props) {
       </h2>
 
       {props.link ? (
-        <a href={props.link} target="_blank">
+        <a href={props.link} target="_blank" rel="noopener">
           {props.link}
         </a>
       ) : null}
 
-      {props.items?.map((it) => <p key={it}>{it}</p>)}
+      {props.items?.map((it) => (
+        <p key={it}>{it}</p>
+      ))}
 
       {props.markdownContent ? (
         <ReactMarkdown className="experience-box-markdown">

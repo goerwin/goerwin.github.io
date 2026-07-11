@@ -1,21 +1,20 @@
-import { EducationExperience, WorkExperience } from '@/content/schemas';
-import { getDateRange } from '@/utils/date';
+import Image from 'next/image';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import type { EducationExperience, WorkExperience } from '@/content/schemas';
 import {
   getAbout,
   getExperiences,
   getInfo,
   getProjects,
 } from '@/utils/content';
-import React from 'react';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { getDateRange } from '@/utils/date';
 import ExperienceBox from './ExperienceBox';
 import {
-  getResetStyles,
-  getStyles,
   getImageInfo,
   getImageSizeForContainer,
+  getResetStyles,
+  getStyles,
 } from './utils';
-import Image from 'next/image';
 
 function beautifyUrl(url: string) {
   return url.replace(/https:\/\/(www\.)?/, '');

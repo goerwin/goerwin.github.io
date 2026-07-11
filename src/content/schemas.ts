@@ -1,5 +1,5 @@
-import { getExperiences } from '@/utils/content';
 import { z } from 'zod';
+import { getExperiences } from '@/utils/content';
 
 const dateSchema = z.unknown().pipe(z.coerce.date());
 

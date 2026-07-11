@@ -1,7 +1,6 @@
+import Link from 'next/link';
 import SectionTitle from '@/components/SectionTitle';
 import { getProjects } from '@/utils/content';
-import Link from 'next/link';
-import React from 'react';
 import ProjectList from './ProjectList';
 
 export default async function Projects() {

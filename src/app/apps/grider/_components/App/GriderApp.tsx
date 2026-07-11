@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import type * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,7 +11,7 @@ import {
   getLayoutFromUrlQueryParams,
   getQueryParamValue,
 } from '../../_helpers/layout';
-import { Layout } from '../../types';
+import type { Layout } from '../../types';
 import Card from '../Card/Card';
 import Modal from '../Modal/Modal';
 import StaticGrid from '../StaticGrid/StaticGrid';

@@ -24,8 +24,8 @@ function getGridItemDimensionOffset(
   return itemSize + itemPos < gap
     ? itemSize
     : itemPos < gap
-    ? gap - itemPos
-    : 0;
+      ? gap - itemPos
+      : 0;
 }
 
 export function getGridItemPosDim(

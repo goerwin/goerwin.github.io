@@ -1,12 +1,12 @@
-import { metadata } from '@/app/layout';
-import Carousel from '@/components/Carousel';
-import TagList from '@/components/TagList';
-import { getDateRange } from '@/utils/date';
-import { getProjects } from '@/utils/content';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
+import { metadata } from '@/app/layout';
+import Carousel from '@/components/Carousel';
+import TagList from '@/components/TagList';
+import { getProjects } from '@/utils/content';
+import { getDateRange } from '@/utils/date';
 
 // todo: add the grider page from goerwin.co/grider
 // todo: move expenser app to also a page in here
@@ -26,7 +26,7 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <main className="mx-auto flex max-w-[58rem] flex-col items-center px-4 pt-32 text-center">
-      <h1 className="text-4xl font-bold">{project.name}</h1>
+      <h1 className="font-bold text-4xl">{project.name}</h1>
       <p>{project.company}</p>
       <p className="text-sm opacity-70 dark:opacity-100">
         {getDateRange(project.startDate, project.endDate)}
@@ -52,11 +52,11 @@ export default async function ProjectPage({ params }: Props) {
       ) : (
         <div className="my-14 h-16 w-1 rounded-full bg-gray-400" />
       )}
-      <ReactMarkdown className="prose mt-16 text-left lg:prose-xl dark:text-gray-100">
+      <ReactMarkdown className="prose lg:prose-xl mt-16 text-left dark:text-gray-100">
         {project.content}
       </ReactMarkdown>
 
-      <h2 className="mb-4 mt-10 text-2xl font-bold">Skills</h2>
+      <h2 className="mt-10 mb-4 font-bold text-2xl">Skills</h2>
       <TagList tags={project.skills.map((name) => ({ label: name }))} />
     </main>
   );

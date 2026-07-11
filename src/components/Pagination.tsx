@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
 type GetPaginationInfoProps<T> = {
@@ -14,7 +13,7 @@ export async function getPaginationInfo<T>(props: GetPaginationInfoProps<T>) {
   const itemsPerPage = props.itemsPerPage ?? 10;
   const itemsLength = items.length;
   const numberOfPages = Math.ceil(itemsLength / itemsPerPage);
-  const parsedPage = parseInt(String(Number(props.page))) || 1;
+  const parsedPage = parseInt(String(Number(props.page)), 10) || 1;
   const activePageIdx = parsedPage <= numberOfPages ? parsedPage - 1 : 0;
 
   const visibleItemsStartIdx = activePageIdx * itemsPerPage;

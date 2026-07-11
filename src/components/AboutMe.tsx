@@ -1,6 +1,6 @@
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import SectionTitle from '@/components/SectionTitle';
 import { getAbout, getInfo } from '@/utils/content';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export default async function AboutMe() {
   const aboutMe = await getAbout();

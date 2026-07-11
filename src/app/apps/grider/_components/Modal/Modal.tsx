@@ -1,9 +1,8 @@
-import * as React from 'react';
 import { useEffect, useRef } from 'react';
 import usePortal from 'react-useportal';
 import './Modal.css';
-import ModalInput, { Props as ModalInputProps } from './ModalInput';
-import ModalOptions, { Props as ModalOptionsProps } from './ModalOptions';
+import ModalInput, { type Props as ModalInputProps } from './ModalInput';
+import ModalOptions, { type Props as ModalOptionsProps } from './ModalOptions';
 
 type Props = {
   onClose: () => void;
@@ -27,7 +26,7 @@ export default function Modal(props: Props) {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [handleClickOutside]);
 
   return (
     <Portal>

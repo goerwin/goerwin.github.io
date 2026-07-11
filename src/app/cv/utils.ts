@@ -1,5 +1,5 @@
-import { readFile } from 'fs/promises';
-import path from 'path';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import imageSize from 'image-size';
 
 const rootDir = path.join(process.cwd());
