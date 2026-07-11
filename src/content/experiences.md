@@ -73,5 +73,22 @@ experiences:
       startDate: '2023-10-06',
       endDate: '2024-05-15',
     },
+    {
+      type: 'work',
+      position: 'Senior Software Engineer',
+      company: 'Zip',
+      link: 'https://zip.co/us',
+      location: 'Remote',
+      startDate: '2024-05-13',
+      endDate: '2024-08-13',
+    },
+    {
+      type: 'work',
+      position: 'Senior Software Engineer',
+      company: 'Zip',
+      link: 'https://zip.co/us',
+      location: 'Remote',
+      startDate: '2024-08-13',
+    }
   ]
 ---
