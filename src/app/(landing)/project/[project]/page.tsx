@@ -41,6 +41,7 @@ export default async function ProjectPage({ params }: Props) {
                 // NOTE: because next complains if I dont set these
                 width="100"
                 height="100"
+                // biome-ignore lint/suspicious/noArrayIndexKey: Static list with no reordering.
                 key={idx}
                 src={src}
                 alt={project.name}

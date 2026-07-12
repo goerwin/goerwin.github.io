@@ -29,7 +29,10 @@ export default async function CVPage() {
   const styles = await getStyles();
 
   const skillsMap = projects.reduce<Record<string, number>>((acc, proj) => {
-    proj.skills.forEach((sk) => (acc[sk] ? (acc[sk] += 1) : (acc[sk] = 1)));
+    proj.skills.forEach((skill) => {
+      acc[skill] = (acc[skill] ?? 0) + 1;
+    });
+
     return acc;
   }, {});
 
@@ -60,6 +63,7 @@ export default async function CVPage() {
   return (
     <>
       <title>Erwin_Gaitan_CV</title>
+
       <style dangerouslySetInnerHTML={{ __html: resetStyles }}></style>
       <style dangerouslySetInnerHTML={{ __html: styles }}></style>
 
