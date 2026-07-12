@@ -1,19 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# goerwin.github.io
 
-## Getting Started
+Personal website built with [Next.js](https://nextjs.org/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/).
 
-First, run the development server:
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server |
+| `npm run build` | Build for production (includes CV PDF generation) |
+| `npm run lint` | Check with Biome |
+| `npm run lint:fix` | Auto-fix lint issues |
+| `npm run format` | Format with Biome |
 
 ## Deployment
 
-This site is automatically deployed on every push to `main` using Github Pages
+Pushes to `main` trigger a [GitHub Actions workflow](.github/workflows/deploy.yml) that builds the site and deploys the `out/` folder to [GitHub Pages](https://pages.github.com/).
