@@ -12,20 +12,20 @@ import { getDateRange } from '@/utils/date';
 // todo: move expenser app to also a page in here
 
 type Props = {
-  // NOTE: so sad this can't be automatic
-  params: { project: string };
+  params: Promise<{ project: string }>;
 };
 
 export default async function ProjectPage({ params }: Props) {
+  const { project: projectSlug } = await params;
   const projects = await getProjects();
-  const project = projects.find((it) => it.slug === params.project);
+  const project = projects.find((it) => it.slug === projectSlug);
 
   if (!project) {
     return notFound();
   }
 
   return (
-    <main className="mx-auto flex max-w-[58rem] flex-col items-center px-4 pt-32 text-center">
+    <main className="mx-auto flex max-w-232 flex-col items-center px-4 pt-32 text-center">
       <h1 className="font-bold text-4xl">{project.name}</h1>
       <p>{project.company}</p>
       <p className="text-sm opacity-70 dark:opacity-100">
@@ -33,7 +33,7 @@ export default async function ProjectPage({ params }: Props) {
       </p>
       <p className="mt-4">{project.description}</p>
       {project.images ? (
-        <div className="mt-8 max-w-[600px]">
+        <div className="mt-8 max-w-150">
           <Carousel
             duration={5000}
             items={project.images.map((src, idx) => (
@@ -44,7 +44,7 @@ export default async function ProjectPage({ params }: Props) {
                 key={idx}
                 src={src}
                 alt={project.name}
-                className="h-[400px] w-full rounded-lg object-cover"
+                className="h-100 w-full rounded-lg object-cover"
               />
             ))}
           />
@@ -63,8 +63,9 @@ export default async function ProjectPage({ params }: Props) {
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { project: projectSlug } = await props.params;
   const projects = await getProjects();
-  const project = projects.find((it) => it.slug === props.params.project);
+  const project = projects.find((it) => it.slug === projectSlug);
 
   if (!project) return {};
 

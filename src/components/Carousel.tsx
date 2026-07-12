@@ -40,7 +40,7 @@ export default function Carousel(props: Props) {
       {isOnlyOne ? null : (
         <>
           <button
-            className="absolute top-1/2 left-2 z-20 mt-[-20px] text-[40px] text-gray-400 leading-none hover:scale-110"
+            className="absolute top-1/2 left-2 z-20 mt--5 text-10 text-gray-400 leading-none hover:scale-110"
             aria-label="previous"
             onClick={() => {
               removeInterval();
@@ -51,7 +51,7 @@ export default function Carousel(props: Props) {
           </button>
 
           <button
-            className="absolute top-1/2 right-2 z-20 mt-[-20px] text-[40px] text-gray-400 leading-none hover:scale-110"
+            className="absolute top-1/2 right-2 z-20 mt--5 text-10 text-gray-400 leading-none hover:scale-110"
             aria-label="next"
             onClick={() => {
               removeInterval();

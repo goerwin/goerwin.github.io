@@ -8,7 +8,7 @@ export default async function AboutMe() {
   const languages = info.languages;
 
   return (
-    <section className="max-w-[40rem] pt-[100px] text-center" id="about">
+    <section className="max-w-160 pt-25 text-center" id="about">
       <SectionTitle title="About Me" />
 
       <div className="[&>p]:mb-5 [&>p]:leading-loose">

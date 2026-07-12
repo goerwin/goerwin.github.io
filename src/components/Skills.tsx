@@ -17,7 +17,7 @@ export default async function Skills() {
     });
 
   return (
-    <section className="max-w-[50rem] pt-[100px]" id="skills">
+    <section className="max-w-200 pt-25" id="skills">
       <SectionTitle title="My Skills" />
       <TagList tags={skills.map(([name]) => ({ label: name }))} />
     </section>

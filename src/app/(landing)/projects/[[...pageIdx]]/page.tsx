@@ -5,17 +5,17 @@ import ProjectList from '@/components/ProjectList';
 import SectionTitle from '@/components/SectionTitle';
 import { getProjects } from '@/utils/content';
 
-// NOTE: this should be provided by next.js! come on!
 type Props = {
-  params: Record<string, string[]>;
-  searchParams: Record<string, string>;
+  params: Promise<{ pageIdx?: string[] }>;
+  searchParams: Promise<Record<string, string>>;
 };
 
 export default async function ProjectsPage(props: Props) {
+  const params = await props.params;
   const { activePageIdx, visibleItems, numberOfPages } =
     await getPaginationInfo({
       getItemsFn: getProjects,
-      page: props.params.pageIdx?.[0],
+      page: params.pageIdx?.[0],
     });
 
   return (
@@ -41,13 +41,14 @@ export async function generateStaticParams() {
 
   return new Array(numberOfPages)
     .fill(0)
-    .map((_, idx) => ({ pageIdx: [idx === 0 ? 'index' : String(idx + 1)] }));
+    .map((_, idx) => ({ pageIdx: idx === 0 ? [] : [String(idx + 1)] }));
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const { activePageIdx, numberOfPages } = await getPaginationInfo({
     getItemsFn: getProjects,
-    page: props.params.pageIdx?.[0],
+    page: params.pageIdx?.[0],
   });
 
   const noIndexPageSubstr =

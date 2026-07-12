@@ -17,7 +17,7 @@ export default function Intro(props: Props) {
   return (
     <section
       id="intro"
-      className="mb-28 max-w-[54rem] scroll-mt-[100rem] text-center sm:mb-0"
+      className="mb-28 max-w-216 scroll-mt-400 text-center sm:mb-0"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -33,7 +33,7 @@ export default function Intro(props: Props) {
               height="120"
               quality="95"
               priority={true}
-              className="h-[120px] w-[120px] rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="h-30 w-30 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
 
@@ -76,7 +76,7 @@ export default function Intro(props: Props) {
             prefetch={false}
             download={it.download}
             className={twMerge(
-              'group flex items-center rounded-full bg-white text-gray-700 transition hover:scale-105 hover:text-gray-950 focus:scale-105 active:scale-105 dark:bg-gray-900 dark:text-white',
+              'group flex items-center rounded-full bg-white text-gray-700 transition hover:scale-105 hover:text-gray-950 focus:scale-105 active:scale-105 dark:bg-gray-900 dark:text-white dark:hover:text-white',
               it.type === 'text' && 'gap-2 px-7 py-4 text-base',
               it.type === 'icon' && 'p-4 text-2xl',
             )}
