@@ -1,21 +1,20 @@
-import { EducationExperience, WorkExperience } from '@/content/schemas';
-import { getDateRange } from '@/utils/date';
+import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
+import type { EducationExperience, WorkExperience } from '@/content/schemas';
 import {
   getAbout,
   getExperiences,
   getInfo,
   getProjects,
 } from '@/utils/content';
-import React from 'react';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { getDateRange } from '@/utils/date';
 import ExperienceBox from './ExperienceBox';
 import {
-  getResetStyles,
-  getStyles,
   getImageInfo,
   getImageSizeForContainer,
+  getResetStyles,
+  getStyles,
 } from './utils';
-import Image from 'next/image';
 
 function beautifyUrl(url: string) {
   return url.replace(/https:\/\/(www\.)?/, '');
@@ -30,7 +29,10 @@ export default async function CVPage() {
   const styles = await getStyles();
 
   const skillsMap = projects.reduce<Record<string, number>>((acc, proj) => {
-    proj.skills.forEach((sk) => (acc[sk] ? (acc[sk] += 1) : (acc[sk] = 1)));
+    proj.skills.forEach((skill) => {
+      acc[skill] = (acc[skill] ?? 0) + 1;
+    });
+
     return acc;
   }, {});
 
@@ -61,7 +63,10 @@ export default async function CVPage() {
   return (
     <>
       <title>Erwin_Gaitan_CV</title>
+
+      {/* biome-ignore lint/security/noDangerouslySetInnerHtml: Static trusted CSS styles */}
       <style dangerouslySetInnerHTML={{ __html: resetStyles }}></style>
+      {/* biome-ignore lint/security/noDangerouslySetInnerHtml: Static trusted CSS styles */}
       <style dangerouslySetInnerHTML={{ __html: styles }}></style>
 
       <div className="cv-container">
@@ -124,8 +129,8 @@ export default async function CVPage() {
           <h1>Languages</h1>
 
           <ul>
-            {info.languages.map((it, idx) => (
-              <li key={idx}>
+            {info.languages.map((it) => (
+              <li key={it.name}>
                 {it.name} ({it.level})
               </li>
             ))}
@@ -136,17 +141,17 @@ export default async function CVPage() {
           <h1>Skills</h1>
 
           <p className="skills">
-            {skills.map(([name], idx) => (
-              <span key={idx}>{name} </span>
+            {skills.map(([name]) => (
+              <span key={name}>{name} </span>
             ))}
           </p>
         </section>
 
         <section>
           <h1>Education</h1>
-          {educationExperiences.map((it, idx) => (
+          {educationExperiences.map((it) => (
             <ExperienceBox
-              key={idx}
+              key={`${it.company}-${it.startDate}`}
               title={it.company}
               subtitle={it.title}
               link={it.link}
@@ -158,9 +163,9 @@ export default async function CVPage() {
         <section>
           <h1>Work experience</h1>
 
-          {workExperiences.map((it, idx) => (
+          {workExperiences.map((it) => (
             <ExperienceBox
-              key={idx}
+              key={`${it.company}-${it.startDate}`}
               title={it.company}
               subtitle={it.position}
               link={it.link}
@@ -171,9 +176,9 @@ export default async function CVPage() {
 
         <section>
           <h1>Projects</h1>
-          {projects.map((it, idx) => (
+          {projects.map((it) => (
             <ExperienceBox
-              key={idx}
+              key={it.name}
               title={it.name}
               subtitle={it.company}
               markdownContent={it.content}

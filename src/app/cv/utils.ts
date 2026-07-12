@@ -1,5 +1,5 @@
-import { readFile } from 'fs/promises';
-import path from 'path';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
 import imageSize from 'image-size';
 
 const rootDir = path.join(process.cwd());
@@ -17,7 +17,7 @@ export async function getStyles() {
 export async function getImageInfo(publicPath: string, type: string) {
   const parsedPath = path.join(publicDir, publicPath);
   const file = await readFile(parsedPath);
-  const imageInfo = imageSize(parsedPath);
+  const imageInfo = imageSize(file);
 
   if (!imageInfo.width || !imageInfo.height)
     throw new Error(`No Image info: ${parsedPath}`);
@@ -36,7 +36,7 @@ export function getImageSizeForContainer(
   imageW: number,
   imageH: number,
 ) {
-  let imgWidth, imgHeight;
+  let imgWidth: number, imgHeight: number;
   const containerRatio = containerW / containerH;
   const imgRatio = imageW / imageH;
 

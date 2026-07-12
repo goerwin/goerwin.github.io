@@ -1,7 +1,7 @@
 'use client';
 
+import { createContext, type ReactNode, useContext, useState } from 'react';
 import { tryUnknownFn } from '@/utils/general';
-import React, { ReactNode, createContext, useContext, useState } from 'react';
 
 type Theme = 'dark' | 'light' | 'device';
 

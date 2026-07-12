@@ -1,6 +1,6 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import puppeteer from 'puppeteer';
-import fs from 'fs';
-import path from 'path';
 
 const rootDir = path.join(process.cwd());
 const nextOutDir = path.join(rootDir, 'out');

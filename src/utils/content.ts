@@ -1,13 +1,13 @@
+import { readdir, readFile } from 'node:fs/promises';
+import path from 'node:path';
+import grayMatter from 'gray-matter';
+import slugify from 'slugify';
 import {
   ExperiencesSchema,
   GeneralGrayMatterSchema,
   InfoSchema,
   ProjectsSchema,
 } from '@/content/schemas';
-import { readFile, readdir } from 'fs/promises';
-import grayMatter from 'gray-matter';
-import path from 'path';
-import slugify from 'slugify';
 
 const contentsDir = path.join(process.cwd(), 'src/content');
 

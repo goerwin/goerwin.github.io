@@ -1,7 +1,6 @@
+import Link from 'next/link';
 import ThemeSwitcherButton from '@/components/ThemeSwitcherButton';
 import { ThemeContextProvider } from '@/contexts/ThemeContext';
-import Link from 'next/link';
-import React from 'react';
 
 const menuItems = [
   { title: 'Home', href: '/' },
@@ -13,7 +12,7 @@ const menuItems = [
 
 export default function Header() {
   return (
-    <ul className="fixed left-0 right-0 z-50 flex flex-wrap justify-center gap-2 bg-white/80 p-2 text-sm shadow-lg shadow-black/10 backdrop-blur-md dark:bg-black/80 md:left-1/2 md:right-auto md:top-6 md:-translate-x-1/2 md:flex-nowrap md:rounded-full">
+    <ul className="fixed right-0 left-0 z-50 flex flex-wrap justify-center gap-2 bg-white/80 p-2 text-sm shadow-black/10 shadow-lg backdrop-blur-md md:top-6 md:right-auto md:left-1/2 md:-translate-x-1/2 md:flex-nowrap md:rounded-full dark:bg-black/80">
       {menuItems.map(({ title, id, href }) => (
         <li key={title}>
           <Link

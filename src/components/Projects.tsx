@@ -1,14 +1,13 @@
+import Link from 'next/link';
 import SectionTitle from '@/components/SectionTitle';
 import { getProjects } from '@/utils/content';
-import Link from 'next/link';
-import React from 'react';
 import ProjectList from './ProjectList';
 
 export default async function Projects() {
   const projects = await getProjects();
 
   return (
-    <section className="max-w-[50rem] pt-[100px]" id="projects">
+    <section className="max-w-200 pt-25" id="projects">
       <SectionTitle title="My Projects">
         <Link
           href="/projects"

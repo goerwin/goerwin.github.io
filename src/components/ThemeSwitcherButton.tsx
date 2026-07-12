@@ -1,16 +1,16 @@
 'use client';
 
-import { useTheme } from '@/contexts/ThemeContext';
 import { useEffect, useState } from 'react';
 import { CgMoon, CgSun } from 'react-icons/cg';
 import { VscColorMode } from 'react-icons/vsc';
+import { useTheme } from '@/contexts/ThemeContext';
 
 function getButtonTitle(theme: string) {
   return theme === 'dark'
     ? 'Dark color scheme'
     : theme === 'light'
-    ? 'Light color scheme'
-    : 'Device color scheme';
+      ? 'Light color scheme'
+      : 'Device color scheme';
 }
 
 export default function ThemeSwitcherButton() {
@@ -26,6 +26,7 @@ export default function ThemeSwitcherButton() {
 
   return (
     <button
+      type="button"
       onClick={toggleTheme}
       className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-300 text-xl dark:bg-gray-800"
       title={buttonTitle}
