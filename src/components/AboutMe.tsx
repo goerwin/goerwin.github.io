@@ -18,8 +18,8 @@ export default async function AboutMe() {
       <p className="mb-5 font-bold">My languages are:</p>
 
       <div>
-        {languages.map((it, idx) => (
-          <div key={idx}>
+        {languages.map((it) => (
+          <div key={it.name}>
             {it.name} ({it.level})
           </div>
         ))}

@@ -26,6 +26,7 @@ export default function ThemeSwitcherButton() {
 
   return (
     <button
+      type="button"
       onClick={toggleTheme}
       className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-300 text-xl dark:bg-gray-800"
       title={buttonTitle}

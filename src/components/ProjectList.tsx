@@ -11,9 +11,9 @@ export interface Props {
 export default function ProjectList({ projects }: Props) {
   return (
     <div>
-      {projects.map((it, idx) => (
+      {projects.map((it) => (
         <Link
-          key={idx}
+          key={it.slug}
           href={`/project/${it.slug}`}
           className="group relative mx-auto mb-10 block max-w-2xl cursor-pointer overflow-hidden rounded-lg border border-gray-200 bg-gray-300/20 p-4 shadow-md hover:bg-gray-300/40 md:p-8 dark:border-gray-700 dark:bg-gray-900"
         >

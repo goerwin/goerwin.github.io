@@ -5,10 +5,12 @@ import { getProjects } from '@/utils/content';
 export default async function Skills() {
   const projects = await getProjects();
 
-  const skillsMap = projects.reduce<Record<string, number>>((acc, proj) => {
-    proj.skills.forEach((sk) => (acc[sk] ? (acc[sk] += 1) : (acc[sk] = 1)));
-    return acc;
-  }, {});
+  const skillsMap: Record<string, number> = {};
+  for (const proj of projects) {
+    for (const skill of proj.skills) {
+      skillsMap[skill] = (skillsMap[skill] ?? 0) + 1;
+    }
+  }
 
   const skills = Object.keys(skillsMap)
     .map<[string, number]>((k) => [k, skillsMap[k] ?? 0])

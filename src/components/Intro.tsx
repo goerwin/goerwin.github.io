@@ -67,9 +67,9 @@ export default function Intro(props: Props) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        {props.info.links.map((it, idx) => (
+        {props.info.links.map((it) => (
           <Link
-            key={idx}
+            key={it.href}
             href={it.href}
             title={it.title}
             target={it.target}

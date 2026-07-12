@@ -12,9 +12,9 @@ export default async function Experience() {
       <SectionTitle title="My Experience" />
 
       <div className='relative pt-8 pb-1 before:absolute before:top-0 before:left-[calc(var(--spacing-timeline-icon-size)/2)] before:-z-10 before:ml-[-2px] before:h-full before:w-1 before:rounded-lg before:bg-gray-200 before:content-[""] md:before:left-1/2'>
-        {experiences.map((it, idx) => (
+        {experiences.map((it) => (
           <div
-            key={idx}
+            key={`${it.company}-${it.startDate}`}
             className="group mb-10 grid grid-cols-[auto_1fr] md:grid-cols-[1fr_auto_1fr] [&>*]:row-span-full"
           >
             <div className="relative ml-4 rounded border border-gray-300 bg-gray-200/50 p-4 md:mr-auto md:group-even:col-start-3 md:group-even:ml-8 md:group-odd:mr-8 md:group-odd:ml-auto dark:border-gray-700 dark:bg-gray-900">

@@ -36,6 +36,7 @@ export default async function Pagination(props: Props) {
     <div className="flex flex-wrap gap-2">
       {new Array(props.numberOfPages).fill(0).map((_, idx) => (
         <Link
+          // biome-ignore lint/suspicious/noArrayIndexKey: Synthetic array for pagination, index is the only unique identifier.
           key={idx}
           href={`${props.basePathname}/${idx === 0 ? '' : `${idx + 1}`}`}
           className={twMerge(

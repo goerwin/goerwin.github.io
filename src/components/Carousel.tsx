@@ -1,6 +1,12 @@
 'use client';
 
-import { type ReactNode, useEffect, useRef, useState } from 'react';
+import {
+  type ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 
@@ -23,17 +29,21 @@ export default function Carousel(props: Props) {
     setActiveSlide((prev) => (prev === 0 ? itemsLength - 1 : prev - 1));
   };
 
-  const removeInterval = () => {
+  const removeInterval = useCallback(() => {
     clearInterval(intervalRef.current);
-  };
+  }, []);
 
   useEffect(() => {
+    const setNextActiveSlide = () => {
+      setActiveSlide((prev) => (prev + 1) % itemsLength);
+    };
+
     intervalRef.current = window.setInterval(
       setNextActiveSlide,
       props.duration ?? 5000,
     );
     return removeInterval;
-  }, [props.duration]);
+  }, [props.duration, itemsLength, removeInterval]);
 
   return (
     <div className="relative mx-auto overflow-hidden shadow-2xl">

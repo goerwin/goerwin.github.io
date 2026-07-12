@@ -64,7 +64,9 @@ export default async function CVPage() {
     <>
       <title>Erwin_Gaitan_CV</title>
 
+      {/* biome-ignore lint/security/noDangerouslySetInnerHtml: Static trusted CSS styles */}
       <style dangerouslySetInnerHTML={{ __html: resetStyles }}></style>
+      {/* biome-ignore lint/security/noDangerouslySetInnerHtml: Static trusted CSS styles */}
       <style dangerouslySetInnerHTML={{ __html: styles }}></style>
 
       <div className="cv-container">
@@ -127,8 +129,8 @@ export default async function CVPage() {
           <h1>Languages</h1>
 
           <ul>
-            {info.languages.map((it, idx) => (
-              <li key={idx}>
+            {info.languages.map((it) => (
+              <li key={it.name}>
                 {it.name} ({it.level})
               </li>
             ))}
@@ -139,17 +141,17 @@ export default async function CVPage() {
           <h1>Skills</h1>
 
           <p className="skills">
-            {skills.map(([name], idx) => (
-              <span key={idx}>{name} </span>
+            {skills.map(([name]) => (
+              <span key={name}>{name} </span>
             ))}
           </p>
         </section>
 
         <section>
           <h1>Education</h1>
-          {educationExperiences.map((it, idx) => (
+          {educationExperiences.map((it) => (
             <ExperienceBox
-              key={idx}
+              key={`${it.company}-${it.startDate}`}
               title={it.company}
               subtitle={it.title}
               link={it.link}
@@ -161,9 +163,9 @@ export default async function CVPage() {
         <section>
           <h1>Work experience</h1>
 
-          {workExperiences.map((it, idx) => (
+          {workExperiences.map((it) => (
             <ExperienceBox
-              key={idx}
+              key={`${it.company}-${it.startDate}`}
               title={it.company}
               subtitle={it.position}
               link={it.link}
@@ -174,9 +176,9 @@ export default async function CVPage() {
 
         <section>
           <h1>Projects</h1>
-          {projects.map((it, idx) => (
+          {projects.map((it) => (
             <ExperienceBox
-              key={idx}
+              key={it.name}
               title={it.name}
               subtitle={it.company}
               markdownContent={it.content}

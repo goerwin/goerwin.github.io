@@ -36,7 +36,7 @@ export function getImageSizeForContainer(
   imageW: number,
   imageH: number,
 ) {
-  let imgWidth, imgHeight;
+  let imgWidth: number, imgHeight: number;
   const containerRatio = containerW / containerH;
   const imgRatio = imageW / imageH;
 
