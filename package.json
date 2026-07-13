@@ -24,6 +24,10 @@
     "tailwind-merge": "^3.6.0",
     "zod": "^4.4.3"
   },
+  "allowScripts": {
+    "puppeteer": true,
+    "sharp": true
+  },
   "overrides": {
     "next": {
       "postcss": "8.5.17"
