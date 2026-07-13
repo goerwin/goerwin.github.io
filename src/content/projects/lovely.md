@@ -2,8 +2,6 @@
 name: Lovely (PegadaCerta)
 company: Freelancer
 description: Lovely was an online School for dating
-startDate: 2014-06-15
-endDate: 2015-08-15
 skills:
   [
     'HTML',

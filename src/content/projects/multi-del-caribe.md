@@ -2,8 +2,6 @@
 name: Multifinanciera del Caribe
 company: Freelancer
 description: Cooperative that offers low-interest loans to employees in Colombia
-startDate: 2017-08-15
-endDate: 2018-01-15
 skills:
   [
     'HTML',

@@ -182,10 +182,7 @@ export default async function CVPage() {
               title={it.name}
               subtitle={it.company}
               markdownContent={it.content}
-              items={[
-                ...(it.description ? [it.description] : []),
-                getDateRange(it.startDate, it.endDate),
-              ]}
+              items={it.description ? [it.description] : []}
             ></ExperienceBox>
           ))}
         </section>

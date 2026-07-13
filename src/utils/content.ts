@@ -69,9 +69,5 @@ export async function getProjects() {
     projectFiles.map((it) => getProject(it.fullPath)),
   );
 
-  const parsedProjects = await ProjectsSchema.parseAsync(projects);
-
-  return parsedProjects.sort((a, b) =>
-    a.startDate < b.startDate ? 1 : a.startDate > b.startDate ? -1 : 0,
-  );
+  return ProjectsSchema.parseAsync(projects);
 }

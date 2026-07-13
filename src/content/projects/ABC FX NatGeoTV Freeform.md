@@ -2,8 +2,6 @@
 name: Disney's ABC/FX/NatGeoTV/Freeform
 company: Globant
 description: Streaming and video platforms part of Walt Disney's entertainment services
-startDate: 2019-11-15
-endDate: 2021-10-15
 skills:
   [
     'HTML',

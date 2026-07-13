@@ -106,7 +106,7 @@ export default function Carousel(props: Props) {
           </div>
           <div
             className={`absolute inset-0 flex justify-center transition-opacity duration-500 ${
-              idx !== activeSlide ? 'opacity-0' : 'z-10 opacity-1'
+              idx !== activeSlide ? 'opacity-0' : 'z-10 opacity-100'
             }`}
           >
             {it}

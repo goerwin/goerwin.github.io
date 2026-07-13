@@ -2,8 +2,6 @@
 name: Squad
 company: Squad Inc
 description: Squad is a brazilian startup having a set of web and native apps that help teams improve their presence in Social Networks
-startDate: 2015-02-15
-endDate: 2017-06-15
 skills:
   [
     'HTML',

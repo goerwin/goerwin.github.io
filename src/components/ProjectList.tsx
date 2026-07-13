@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import placeholderImg from '@/assets/placeholder.jpeg';
 import type { Project } from '@/content/schemas';
-import { getDateRange } from '@/utils/date';
 
 export interface Props {
   projects: Project[];
@@ -19,10 +18,7 @@ export default function ProjectList({ projects }: Props) {
         >
           <div className="md:w-[55%] md:group-even:ml-auto">
             <h3 className="break-all font-bold text-xl">{it.name}</h3>
-            <h3 className="font-bold text-sm italic">{it.company}</h3>
-            <h3 className="mb-2 text-sm italic">
-              {getDateRange(it.startDate, it.endDate)}
-            </h3>
+            <h3 className="mb-2 font-bold text-sm italic">{it.company}</h3>
             <p>{it.description}</p>
 
             <div className="mt-2 flex flex-wrap gap-1 md:mt-5">

@@ -54,8 +54,6 @@ export const ProjectSchema = z.object({
   description: z.string().optional(),
   content: z.string(),
   skills: z.array(z.string()),
-  startDate: dateSchema,
-  endDate: dateSchema.optional(),
 });
 
 export const ProjectsSchema = z

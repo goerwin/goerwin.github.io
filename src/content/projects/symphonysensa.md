@@ -2,8 +2,6 @@
 name: Symphony AI
 company: Fullstack Labs
 description: AI services for banks including financial crime prevention
-startDate: 2023-10-15
-endDate: 2024-05-15
 skills:
   [
     'HTML',

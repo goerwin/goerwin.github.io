@@ -2,8 +2,6 @@
 name: DisneyNow
 company: Globant
 description: Streaming and video platform for Disney Channel, Disney XD and Disney Junior
-startDate: 2018-04-15
-endDate: 2019-11-15
 skills:
   [
     'HTML',

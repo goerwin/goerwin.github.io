@@ -2,8 +2,6 @@
 name: Influx Social
 company: Freelancer
 description: Web application tool that helped boost Instagram users their presence in the website
-startDate: 2015-04-15
-endDate: 2016-08-15
 skills:
   [
     'HTML',

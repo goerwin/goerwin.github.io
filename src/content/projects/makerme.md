@@ -2,8 +2,6 @@
 name: Maker.me
 company: Koombea
 description: Social Network for product makers
-startDate: 2014-02-15
-endDate: 2014-04-15
 skills: ['HTML', 'CSS', 'JavaScript', 'Mocha.js', 'Git']
 ---
 

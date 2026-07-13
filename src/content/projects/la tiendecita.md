@@ -2,8 +2,6 @@
 name: La Tiendecita
 company: Freelancer
 description: Restaurant website with custom CMS
-startDate: 2014-04-15
-endDate: 2014-06-15
 skills: ['HTML', 'CSS', 'JavaScript', 'Git', 'Grunt.js']
 ---
 

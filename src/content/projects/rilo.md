@@ -2,8 +2,6 @@
 name: Rilo
 company: 'Koombea'
 description: Content Management System and tool to create custom and dynamic websites
-startDate: 2013-02-15
-endDate: 2014-02-15
 skills:
   ['HTML', 'CSS', 'JavaScript', 'Backbone.js', 'Angular.js', 'Grunt.js', 'Git']
 ---

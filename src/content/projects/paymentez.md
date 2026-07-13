@@ -1,8 +1,6 @@
 ---
 name: Paymentez
 description: Platform that managed payments for mobile video games in South America
-startDate: 2012-06-15
-endDate: 2013-02-15
 skills: [HTML, CSS, JavaScript, JQuery, Git]
 images: [/assets/projects/paymentez1.webp]
 company: 'Koombea'

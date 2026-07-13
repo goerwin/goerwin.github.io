@@ -2,8 +2,6 @@
 name: Disney's Launchpad
 company: Globant
 description: Walt Disney's internal tool for managers and clients used to create custom experiences
-startDate: 2021-10-15
-endDate: 2022-10-15
 skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular.js', 'Java', 'Git']
 ---
 

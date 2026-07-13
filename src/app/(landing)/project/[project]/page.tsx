@@ -6,7 +6,6 @@ import { metadata } from '@/app/layout';
 import Carousel from '@/components/Carousel';
 import TagList from '@/components/TagList';
 import { getProjects } from '@/utils/content';
-import { getDateRange } from '@/utils/date';
 
 // todo: add the grider page from goerwin.co/grider
 // todo: move expenser app to also a page in here
@@ -28,9 +27,6 @@ export default async function ProjectPage({ params }: Props) {
     <main className="mx-auto flex max-w-232 flex-col items-center px-4 pt-32 text-center">
       <h1 className="font-bold text-4xl">{project.name}</h1>
       <p>{project.company}</p>
-      <p className="text-sm opacity-70 dark:opacity-100">
-        {getDateRange(project.startDate, project.endDate)}
-      </p>
       <p className="mt-4">{project.description}</p>
       {project.images ? (
         <div className="mt-8 max-w-150">

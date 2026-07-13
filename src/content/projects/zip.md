@@ -2,8 +2,6 @@
 name: Zip
 company: Zip
 description: Zip is a leading digital financial services company providing fair and seamless solutions that simplify how people pay.
-startDate: 2024-05-13
-endDate: 2024-08-13
 skills:
   [
     'HTML',

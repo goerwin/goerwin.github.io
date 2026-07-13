@@ -2,8 +2,6 @@
 name: Convera
 company: Globant
 description: Convera Inc. Fintech solutions
-startDate: 2022-10-15
-endDate: 2023-10-06
 skills:
   [
     'HTML',
