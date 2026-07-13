@@ -85,8 +85,8 @@ experiences:
     {
       type: 'work',
       position: 'Senior Software Engineer',
-      company: 'Zip',
-      link: 'https://zip.co/us',
+      company: 'Godaddy',
+      link: 'https://www.godaddy.com',
       location: 'Remote',
       startDate: '2024-08-13',
     }

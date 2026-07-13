@@ -6,7 +6,10 @@ const rootDir = path.join(process.cwd());
 const nextOutDir = path.join(rootDir, 'out');
 
 async function main() {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
+  });
   const tab = await browser.newPage();
   const cvHtml = fs.readFileSync(path.join(nextOutDir, 'cv.html'), {
     encoding: 'utf-8',
