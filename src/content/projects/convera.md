@@ -18,6 +18,7 @@ skills:
     'React Testing Library',
     'Figma',
     'Git',
+    'AI',
   ]
 ---
 

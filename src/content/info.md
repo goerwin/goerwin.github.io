@@ -41,4 +41,4 @@ links:
   ]
 ---
 
-Hello, **I'm Erwin**. I'm a **Senior Front-End Developer** with industry experience **since 2012**. I enjoy building sites & apps using mainly **React**, **JavaScript/TypeScript** and **Next.js**
+Hello, **I'm Erwin**, a **Senior Software Engineer** with professional experience since **2012**. I specialize in **React**, **JavaScript/TypeScript**, **Node.js**, and **Next.js**, and enjoy exploring practical applications of **AI**.

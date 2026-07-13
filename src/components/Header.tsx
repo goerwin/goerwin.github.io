@@ -5,9 +5,9 @@ import { ThemeContextProvider } from '@/contexts/ThemeContext';
 const menuItems = [
   { title: 'Home', href: '/' },
   { title: 'About', id: 'about', href: '/' },
-  { title: 'Projects', id: 'projects', href: '/' },
   { title: 'Skills', id: 'skills', href: '/' },
   { title: 'Experience', id: 'experience', href: '/' },
+  { title: 'Projects', id: 'projects', href: '/' },
 ];
 
 export default function Header() {
