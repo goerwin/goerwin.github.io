@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run build-cv-pdf",
+    "build": "next build",
     "build-cv-pdf": "node ./cv-pdf-generator.mts",
     "start": "next start",
     "lint": "biome check .",
