@@ -1,7 +1,7 @@
 ---
 name: Influx Social
 company: Freelancer
-description: Web application tool that helped boost Instagram users their presence in the website
+description: Dashboard tool that helped Instagram users boost their presence on the platform
 skills:
   [
     'HTML',
@@ -20,10 +20,9 @@ skills:
   ]
 ---
 
-Influx social was a dashboard tool to help users boost their presence in instagram.
+Influx Social was a dashboard tool that helped users boost their presence on Instagram.
 
-The main application consisted of a dashboard with tools to help visualize, organize and make actions on the instagram’s accounts linked to it.
-I was in charge of all the front-end part of the application, communicating with the backend engine in order to get the responses from it back to the client, and display them visually using React-grid-layout and the D3.js library.
+The main application was a dashboard for visualizing, organizing, and taking action on linked Instagram accounts. I handled all of the front end, communicating with the backend to fetch data and display it visually using React Grid Layout and D3.js.
 
 My responsibilities were:
 
@@ -33,5 +32,5 @@ My responsibilities were:
 - Unit tests, integration tests and CI/CD
 - Attend refinement meetings, daily standups, demo meetings
 - Work with the Design team about requested features
-- Use ReactJS for the creation of the main application and other components
+- Use React for the main application and other components
 - State management using Redux, Redux Saga

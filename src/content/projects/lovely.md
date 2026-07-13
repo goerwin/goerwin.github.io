@@ -1,7 +1,7 @@
 ---
 name: Lovely (PegadaCerta)
 company: Freelancer
-description: Lovely was an online School for dating
+description: Online school for dating
 skills:
   [
     'HTML',
@@ -23,8 +23,8 @@ images:
   ]
 ---
 
-In this project, we wanted to develop an online school for dating that worked as a subscription based platform in which the users can pay a subscription in order to access premium videos, live coaches and other perks.
-We used ReactJS as the Javascript library/framework to develop all features used in the main application as well as the signin/signup components.
+This was an online dating school built as a subscription-based platform where users could pay to access premium videos, live coaches, and other perks.
+We used React for the main application and the sign-in/signup components.
 
 My responsibilities were:
 
@@ -34,5 +34,6 @@ My responsibilities were:
 - Provide feedback and results of the progress to the client and stakeholders
 - Attend refinement meetings, daily standups, demo meetings
 - Work with the Design team about requested features
-- Use ReactJS for the creation of the main application and other components
-- Use NodeJS for the signin/signup components (generating JWT tokens, keep user sessions alive, etc) \* Create the iOS version using Swift
+- Use React for the main application and other components
+- Use Node.js for the sign-in/signup components (generating JWT tokens, keeping user sessions alive, etc.)
+- Create the iOS version using Swift

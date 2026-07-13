@@ -1,6 +1,6 @@
 ---
 name: SlideTown
-description: SlideTown was one of the first presentation marketplaces in the world. We helped companies find the perfect presentations to tell more powerful and engaging stories!
+description: One of the first presentation marketplaces in the world
 skills: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Backbone.js', 'Git']
 images:
   [
@@ -12,7 +12,7 @@ images:
 company: 'Koombea'
 ---
 
-I was in charge of multiple components of the project. Firstly, I started working on the landing pages, where we needed to use the latest UI features of the time, such as Parallax Effect and custom slide transitions for the main banner of the page. Later, I was moved to also work on the application itself, and part of the login component. In these ones, we mainly used Backbone as the Javascript framework for keeping the views, controllers and models up to date. Also, JQuery was used when needed for more custom components needed like Dropdowns, Forms, etc.
+I worked on multiple components of the project. I started with the landing pages, where we used the latest UI features of the time, such as parallax effects and custom slide transitions for the main banner. Later, I moved to the application itself and the login component. We used Backbone as the JavaScript framework to keep views, controllers, and models in sync. We also used jQuery for custom components like dropdowns and forms.
 
 My responsibilities were:
 

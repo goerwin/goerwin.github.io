@@ -1,7 +1,7 @@
 ---
 name: Zip
 company: Zip
-description: Zip is a leading digital financial services company providing fair and seamless solutions that simplify how people pay.
+description: Digital financial services company providing fair and seamless payment solutions
 skills:
   [
     'HTML',
@@ -22,7 +22,7 @@ skills:
   ]
 ---
 
-Worked as a contractor for several months, developing and maintaining multiple web pages, and refactoring components and sections for reusability using React, Next.js, and Contentful.
+I worked as a contractor, developing and maintaining web pages and refactoring components for reusability using React, Next.js, and Contentful.
 
 My responsibilities were:
 

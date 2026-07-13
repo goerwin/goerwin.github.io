@@ -5,10 +5,9 @@ description: Walt Disney's internal tool for managers and clients used to create
 skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular.js', 'Java', 'Git']
 ---
 
-In this project, I worked as a Senior front-end developer and was the tech lead for the effort of migrating the application from AngularJS (v1.3) to a modern Angular with TypeScript (v12) at the time.
+I worked as a senior front-end developer and tech lead, migrating the application from AngularJS (v1.3) to modern Angular with TypeScript (v12).
 
-I was also working on the creation of unit and integration tests of the already functionality, since there weren't that many.
-In this project, we faced many challenges, especially dealing with the already obsolete Angular.js version which had many issues, but after several months of effort, we were able to complete the task.
+I also created unit and integration tests for the existing functionality, which had very few tests. We faced many challenges, especially with the outdated AngularJS version, but after several months we completed the migration.
 
 My responsibilities were:
 
@@ -17,4 +16,5 @@ My responsibilities were:
 - Lead the code review processes
 - Create unit tests and integration tests
 - Attend refinement meetings, daily standups, demo meetings
-- Propose new features and modification/elimination of existing ones \* Work with Java on the backend for some requested features
+- Propose new features and modification/elimination of existing ones
+- Work with Java on the backend for some requested features

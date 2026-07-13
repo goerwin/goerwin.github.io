@@ -21,11 +21,11 @@ skills:
   ]
 ---
 
-In this project, I worked directly with the CEO in order to create a system that allows employees in Colombia to get access to low-interest loans. In this project, I was the only developer and was in charge of managing the database, front-end and back-end sides of the project. The project was later acquired by a bigger player in the country.
+In this project, I worked directly with the CEO to create a system that lets employees in Colombia access low-interest loans. I was the only developer, managing the database, front end, and back end. The project was later acquired by a larger player in the country.
 
-The application consisted of a website with signin/signup pages, in which we asked for employee information in order to validate the data, a CRM application done with ReactJS, NodeJS, MySQL for managing users. (Initially we went for a Wordpress solution but dropped it later).
+The application included sign-in/signup pages that collected employee information for validation, and a CRM built with React, Node.js, and MySQL for managing users. (We initially tried a WordPress solution but dropped it.)
 
-Also, we created the same CRM app for desktop versions (Windows, Mac) using ElectronJS.
+We also built desktop versions of the CRM (Windows, Mac) using Electron.
 
 My responsibilities were:
 

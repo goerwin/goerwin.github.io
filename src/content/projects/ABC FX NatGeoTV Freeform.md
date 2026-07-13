@@ -22,9 +22,9 @@ skills:
   ]
 ---
 
-As continuation of the DisneyNow project, the client wanted to do the same for the legacy codes of the websites ABC, FX, NatGeoTV and FreeForm. These websites were very similar to DisneyNow with the exception of having working signin/signup components.
+As a continuation of the DisneyNow project, the client wanted to do the same migration for ABC, FX, NatGeoTV, and Freeform. These sites were similar to DisneyNow but with the added complexity of working sign-in/signup components.
 
-I supported the migration and was the tech-lead of 5 front-end developers in which we have to do almost the same effort in order to migrate these websites.
+I supported the migration as tech lead for five front-end developers, applying the same approach to each website.
 
 My responsibilities were:
 

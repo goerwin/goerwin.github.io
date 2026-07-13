@@ -6,11 +6,11 @@ skills:
   ['HTML', 'CSS', 'JavaScript', 'Backbone.js', 'Angular.js', 'Grunt.js', 'Git']
 ---
 
-Rilo was a project that helps users create websites with ease using “drag and drop” functionalities as well as other easy to use tools to quickly generate landing pages, pages with interactive components and similar.
+Rilo helped users create websites with ease using drag-and-drop functionality and other tools to quickly generate landing pages and pages with interactive components.
 
-In this project, I was in charge, with the help of another front-end engineer, of creating the initial setup and architecture for the front-end application. Also, I worked on the development of the application which we initially wanted to do using Backbone.js, but after some research in the field we decided to go with Angular.js, which was rapidly increasing in popularity in the industry and seemed a very good opportunity to introduce it in our projects.
+Along with another front-end engineer, I created the initial setup and architecture for the front-end application. We initially planned to use Backbone.js, but after some research we switched to Angular.js, which was gaining popularity fast and was a great opportunity to introduce into our projects.
 
-We used GruntJS as the bundling tool for managing the assets (Javascript, images, video files, etc) and the creation of the multiple index.html pages in the application.
+We used GruntJS as the bundling tool for managing assets (JavaScript, images, video files) and generating the multiple index.html pages.
 
 My responsibilities were:
 

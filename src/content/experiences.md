@@ -4,7 +4,7 @@ experiences:
     {
       type: 'education',
       title: "Bachelor's degree in Systems Engineering",
-      description: "I obtained my Bachelor's degree in Systems Engineering in 2012.",
+      description: "I earned my Bachelor's degree in Systems Engineering in 2012.",
       location: 'Barranquilla, Colombia',
       company: 'Universidad del Norte',
       link: 'https://www.uninorte.edu.co/web/departamento-de-ingenieria-de-sistemas-y-computacion',
@@ -15,7 +15,7 @@ experiences:
       type: 'work',
       position: 'Programming and Algorithms assistant',
       company: 'Universidad del Norte',
-      description: 'I worked as an instructor assistant in college for the Programming and Algorithms class.',
+      description: 'I worked as a teaching assistant for the Programming and Algorithms course.',
       location: 'Barranquilla, Colombia',
       link: 'https://www.uninorte.edu.co',
       startDate: '2009-07-15',

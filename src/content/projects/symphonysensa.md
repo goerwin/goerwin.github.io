@@ -23,13 +23,13 @@ skills:
   ]
 ---
 
-Symphony Sensa as part of the SymphonyAI company, is a set of services that use AI to detect and prevent financial crimes.
+Symphony Sensa, part of SymphonyAI, is a set of services that use AI to detect and prevent financial crimes.
 
-Among those services, I worked in the management dashboard and displaying of graphical data using D3, the Regraph library among others.
+I worked on the management dashboard, displaying graphical data using D3, the Regraph library, and other tools.
 
-I mainly worked on the Regraph library to D3 Migration, where we wanted to create a component that displays through a graph, the users, transactions and relationships between these transactions in a Force-Directed Graph with balanced nodes.
+I led the migration from Regraph to D3, creating a component that displays users, transactions, and their relationships in a force-directed graph with balanced nodes.
 
-Also, I worked on other tasks including, developing new features with collaboration of the API team, fixing bugs, work in some back-end related tasks such as managing API routes with Next.js and page routing, also suggesting features and improvements throughout the app.
+I also developed new features in collaboration with the API team, fixed bugs, handled backend tasks like managing Next.js API routes and page routing, and suggested improvements throughout the app.
 
 My responsibilities were:
 

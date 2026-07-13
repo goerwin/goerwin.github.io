@@ -6,7 +6,7 @@ images: [/assets/projects/paymentez1.webp]
 company: 'Koombea'
 ---
 
-This was my first ever project in the industry. I worked as a Junior front-end developer and was in charge of some of the landing pages used by Paymentez in Latam. Most of my responsibilities were to fix UI bugs presented in those pages, responsiveness of the website on Tablet/Mobile screens. Also, later in the project I was in charge of working on some components of the Admin dashboard related to the management of subscriptions. Here, I needed to use JQuery, Vanilla Javascript to handle the rendering and transition of the pages, as well as keeping the application state consistent throughout all of the screens.
+This was my first project in the industry. I worked as a junior front-end developer on some of the landing pages Paymentez used across Latin America. My main tasks were fixing UI bugs and making the site responsive on tablet and mobile screens. Later, I worked on components of the admin dashboard for managing subscriptions. This involved using jQuery and vanilla JavaScript to handle page rendering and transitions, while keeping the application state consistent across all screens.
 
 My responsibilities were:
 

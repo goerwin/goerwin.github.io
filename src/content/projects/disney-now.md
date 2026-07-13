@@ -21,11 +21,11 @@ skills:
   ]
 ---
 
-I worked on this project as a Senior Front-end developer and was the lead of 2 more semi-senior front-end developers.
+I worked on this project as a senior front-end developer, leading two other mid-level front-end developers.
 
-The project consisted of migrating the legacy website which was done using PHP and Backbone.js to a modern stack using TypeScript React with MobX for the front-end, NodeJS on the backend (using a proprietary framework done by Disney) and the video player used throughout all the sites.
+The project consisted of migrating the legacy website from PHP and Backbone.js to a modern stack using TypeScript, React, and MobX on the front end, Node.js on the backend (using a proprietary Disney framework), and the video player used throughout all the sites.
 
-The website consisted of several pages in which you can watch free episodes of some shows, signing in using your TV provider in order to access premium shows, localStorage user sessions in order to save your current list and progress of watched shows/episodes, managing multiple users/sessions in the same browser and several other features.
+The website had several pages where users could watch free episodes of some shows, sign in with their TV provider to access premium content, and use localStorage-based user sessions to save their watchlist and progress -- supporting multiple users in the same browser.
 
 My responsibilities were:
 

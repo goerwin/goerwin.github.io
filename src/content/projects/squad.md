@@ -1,7 +1,7 @@
 ---
 name: Squad
 company: Squad Inc
-description: Squad is a brazilian startup having a set of web and native apps that help teams improve their presence in Social Networks
+description: Brazilian startup with a suite of web and native apps that helped teams improve their presence in social networks
 skills:
   [
     'HTML',
@@ -22,11 +22,11 @@ skills:
   ]
 ---
 
-Squad was a very ambitious project, dedicated to help teams and individuals (specially models) improve their presence in social networks, by leveraging tools, campaign strategies and mechanisms to achieve so.
+Squad was a very ambitious project dedicated to helping teams and individuals (especially models) improve their presence in social networks by leveraging tools, campaign strategies, and other mechanisms.
 
-I worked as the technical lead front-end developer for a team of 2 more front-end devs, 2 backend devs (Python), a design team and other SCRUM roles that were part of the team.
+I served as the technical lead front-end developer for a team of two front-end developers, two backend developers (Python), a design team, and other Scrum roles.
 
-In this project, I worked on the setup of the repositories, the decision making of the tech stack used for the front-end team and the general architecture. Also, I worked on the mobile application for iOS and Android using React Native, and later on the native iOS app using Swift.
+I worked on setting up the repositories, deciding the tech stack and general architecture for the front-end team. I also worked on the mobile application for iOS and Android using React Native, and later on the native iOS app using Swift.
 
 My responsibilities were:
 

@@ -1,11 +1,11 @@
 ---
 name: Maker.me
 company: Koombea
-description: Social Network for product makers
+description: Social network for product makers
 skills: ['HTML', 'CSS', 'JavaScript', 'Mocha.js', 'Git']
 ---
 
-In this project, I worked for a couple of months, and was part of maintaining what was already there, also implementing some features requested by the client. Mostly, most of these features were done using Angular.js.
+I worked on this project for a couple of months, maintaining the existing codebase and implementing client-requested features, mostly in Angular.js.
 
 My responsibilities were:
 
