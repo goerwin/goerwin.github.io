@@ -20,16 +20,7 @@
       "preset": "recommended",
       "correctness": {
         "noUnusedVariables": "error",
-        "noUnusedImports": "warn"
-      },
-      "suspicious": {
-        "noExtraNonNullAssertion": "error",
-        "noUnknownAtRules": {
-          "level": "warn",
-          "options": {
-            "ignore": ["tailwind"]
-          }
-        }
+        "noUnusedImports": "error"
       },
       "nursery": {
         "useSortedClasses": "error"
@@ -55,21 +46,5 @@
         "organizeImports": "on"
       }
     }
-  },
-  "overrides": [
-    {
-      "includes": ["public/**/*.svg"],
-      "linter": { "enabled": false }
-    },
-    {
-      "includes": ["src/app/cv/styles.css"],
-      "linter": {
-        "rules": {
-          "a11y": {
-            "useGenericFontNames": "off"
-          }
-        }
-      }
-    }
-  ]
+  }
 }

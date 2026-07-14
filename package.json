@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "next start",
     "build": "next build",
     "build-cv-pdf": "node ./cv-pdf-generator.mts",
-    "start": "next start",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "format": "biome format --write ."
+    "test": "echo 'No tests...'",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "framer-motion": "^12.42.2",
@@ -45,6 +46,6 @@
     "postcss": "^8.5.17",
     "puppeteer": "^25.3.0",
     "tailwindcss": "^4.3.2",
-    "typescript": "5.8.3"
+    "typescript": "^6.0.3"
   }
 }
