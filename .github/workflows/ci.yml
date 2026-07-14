@@ -25,14 +25,15 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Typecheck
-        run: npm run typecheck
-
-      - name: Test
-        run: npm run test
-
+      # Build before Typecheck because Next.js generates needed "next-env.d.ts" types on the fly
       - name: Build
         run: npm run build
 
       - name: Build CV PDF
         run: npm run build-cv-pdf
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm run test
